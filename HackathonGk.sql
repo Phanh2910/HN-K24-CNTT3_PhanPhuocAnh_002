@@ -71,9 +71,9 @@ where customer_id = 'C002';
 update InsuranceAgents
 set years_of_experience = years_of_experience + 2,
     commission_rate = commission_rate + 1.5
-WHERE agent_id = 'A001';
+where agent_id = 'A001';
 
-delete FROM Policies
+delete from Policies
 where status = 'Cancelled'
 and start_date < '2024-06-15';
 
